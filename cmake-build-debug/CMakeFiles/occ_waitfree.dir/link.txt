@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/occ_waitfree.dir/main.cpp.o CMakeFiles/occ_waitfree.dir/occ_scheduler.cpp.o CMakeFiles/occ_waitfree.dir/server.cpp.o CMakeFiles/occ_waitfree.dir/client.cpp.o CMakeFiles/occ_waitfree.dir/transaction.cpp.o  -o occ_waitfree 
