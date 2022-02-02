@@ -8,12 +8,12 @@
 
 #include <chrono>
 #include <random>
-#include "occ_scheduler.h"
+#include "wf_scheduler.h"
 
 class client {
 public:
 
-    explicit client(occ_scheduler *scheduler) : scheduler(scheduler) {}
+    explicit client(wf_scheduler *scheduler) : scheduler(scheduler) {}
 
     long sendRandomTransactions(int n) {
         auto start = std::chrono::steady_clock::now();
@@ -40,7 +40,7 @@ private:
     }
 
 
-    occ_scheduler *scheduler;
+    wf_scheduler *scheduler;
 };
 
 

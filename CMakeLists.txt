@@ -2,5 +2,6 @@ cmake_minimum_required(VERSION 3.14)
 project(occ_waitfree)
 
 set(CMAKE_CXX_STANDARD 17)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
-add_executable(occ_waitfree main.cpp occ_scheduler.cpp occ_scheduler.h server.cpp server.h client.cpp client.h transaction.cpp transaction.h)
+add_executable(occ_waitfree main.cpp wf_scheduler.h server.h client.h transaction.h)
